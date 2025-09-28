@@ -13,8 +13,13 @@ import ScrollVelocity from './scrollvelocity/velocity';
 import Login from "./components/login/Login"
 import Signup from "./components/register/Signup";
 import Quiz from "./Quiz/Quiz";
+
 import Contact from "./contact/contact";
 import Textabout from "./textabout/textabout";
+
+import Contact from "./Contact/Contact";
+import Textabout from "./Textabout/Textabout";
+
 
 const App = () => {
   return (
