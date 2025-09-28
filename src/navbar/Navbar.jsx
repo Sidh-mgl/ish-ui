@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
-
 import './Navbar.css';
 
 const DEFAULT_ITEMS = [
@@ -170,6 +169,16 @@ export default function Navbar({
           <span className="menu-line short" style={{ background: menuContentColor }} />
         </button>
       </nav>
+
+      {/* Backdrop Blur and Darken */}
+      {showOverlay && (
+        <div
+          className="navbar-backdrop"
+          aria-hidden="true"
+          onClick={() => setIsMenuOpen(false)}
+        />
+      )}
+
       {showOverlay && (
         <div
           ref={overlayRef}
@@ -212,5 +221,3 @@ export default function Navbar({
     </>
   );
 }
-
-
